@@ -1,0 +1,14 @@
+{
+    "scripts": {
+        "run:generators": "babel-node --presets env,stage-2,flow src/generators.js",
+        "run:coroutines": "babel-node --presets env,stage-2,flow src/coroutines.js",
+        "lint": "flow"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-flow": "^6.23.0",
+        "babel-preset-stage-2": "^6.24.1",
+        "flow-bin": "^0.79.1"
+    }
+}
