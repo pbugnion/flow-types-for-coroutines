@@ -2,6 +2,7 @@
     "scripts": {
         "run:generators": "babel-node --presets env,stage-2,flow src/generators.js",
         "run:coroutines": "babel-node --presets env,stage-2,flow src/coroutines.js",
+        "format": "prettier --write \"src/*.js\"",
         "lint": "flow"
     },
     "devDependencies": {
