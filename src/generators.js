@@ -8,6 +8,14 @@ import os from 'os'
 // Change this to a directory that actually exists on your computer
 const rootDirectory = path.join(os.homedir(), 'test/tmp-108')
 
+/** Recursively walk directories.
+  *
+  * Returns an iterator of paths to files located below the
+  * directory passed as argument.
+  *
+  * @param {string} root Directory to start walking from.
+  * @return {Gernator<string, void, void>} Generator of file paths below root.
+  */
 function* walkDirectories(root: string): Generator<string, void, void> {
   for (const name of fs.readdirSync(root)) {
     const filePath = path.join(root, name)
@@ -20,6 +28,11 @@ function* walkDirectories(root: string): Generator<string, void, void> {
   }
 }
 
+/** Count the number of files by extension.
+  *
+  * @param {Iterator<string>} files Iterator of file names
+  * @return {Object} Map of extension to the number of times this extension occurs
+  */
 function countFilesByExtension(files: Iterator<string>): {[string]: number} {
   let total = {};
   for (const f of files) {
