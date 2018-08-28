@@ -6,7 +6,7 @@ import os from "os";
 
 // The root directory from which to run the demo.
 // Change this to a directory that actually exists on your computer
-const rootDirectory = path.join(os.homedir(), "test/tmp-108");
+const rootDirectory = os.homedir();
 
 /** Recursively walk directories.
  *
