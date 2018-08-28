@@ -2,7 +2,7 @@
 # Flow types for generators and coroutines
 
 These are the code samples accompanying the [blog
-post](http://pascalbugnion.net/blog/flow-types-for-generators-and-coroutines.html)
+post](https://pascalbugnion.net/blog/flow-types-for-generators-and-coroutines.html)
 *Flow types for generators and coroutines*.
 
 To install the examples, clone this repository and run:
